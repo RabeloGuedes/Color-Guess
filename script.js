@@ -3,6 +3,8 @@ const resetGame = document.querySelector('#reset-game');
 const circles = document.querySelectorAll('.ball');
 const ballSection = document.querySelector('#ball-section');
 const answer = document.querySelector('#answer');
+const score = document.querySelector('#score');
+let pontos = 0;
 
 function randomColor() {
   let color = [];
@@ -23,8 +25,10 @@ ballSection.addEventListener('click',function (event) {
   if (event.target != ballSection) {
     if (event.target.style.backgroundColor === `rgb${corRgb.innerText}`) {
       answer.innerText = 'Acertou!';
+      score.innerText = `Placar: ${pontos += 3}`;
     } else {
       answer.innerText = 'Errou! Tente novamente!';
+      score.innerText = `Placar: ${pontos -= 1}`;
     }
   }
 });
@@ -50,5 +54,6 @@ window.onload = function () {
   let color = randomColor();
   corRgb.innerText = `(${color[0]}, ${color[1]}, ${color[2]})`;
   circleColorGenerator();
+  score.innerText = `Placar: ${pontos}`; 
 }
 

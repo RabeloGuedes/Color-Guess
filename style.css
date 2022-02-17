@@ -1,7 +1,15 @@
 body {
   background-color: gray;
   text-align: center;
+  font-family: sans-serif;
 }
+
+#rgb-color, #score {
+  color: white;
+  font-size: 27px;
+  font-weight: bold;
+}
+
 #ball-section {
   text-align: center;
   margin-bottom: 20px;
@@ -13,6 +21,7 @@ body {
   border-radius: 50%;
   border: 2px solid black;
   display: inline-block;
+  cursor: pointer;
 }
 
 #reset-game {
@@ -20,4 +29,8 @@ body {
   padding: 10px 20px;
   border-radius: 25px;
   margin: auto;
+}
+
+#answer {
+  font-size: 30px;
 }
