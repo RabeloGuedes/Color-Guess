@@ -1,3 +1,9 @@
+const corRgb = document.querySelector('#rgb-color');
+const resetBtn = document.querySelector('#reset-btn');
+const circles = document.querySelectorAll('.ball');
+const ballSection = document.querySelector('#ball-section');
+const answer = document.querySelector('#answer');
+
 function randomColor() {
   let color = [];
   for (let index = 0; index < 3; index +=1) {
@@ -5,20 +11,37 @@ function randomColor() {
   }
   return color;
 }
-let corRgb = document.querySelector('#rgb-color');
-let resetBtn = document.querySelector('#reset-btn');
-let circles = document.querySelectorAll('.ball');
 
 resetBtn.addEventListener('click',function () {
   let color = randomColor();
   corRgb.innerText = `(${color[0]}, ${color[1]}, ${color[2]})`;
   circleColorGenerator();
-})
+});
+
+ballSection.addEventListener('click',function (event) {
+  if (event.target != ballSection) {
+    if (event.target.style.backgroundColor === `rgb${corRgb.innerText}`) {
+      answer.innerText = 'Acertou!';
+    } else {
+      answer.innerText = 'Errou! Tente novamente!';
+    }
+  }
+});
+
+function choseACircle() {
+  let chosenOne = Math.floor(Math.random() * 6);
+  return chosenOne;
+}
 
 function circleColorGenerator() {
+  let chosenOne = choseACircle();
   for (let index = 0; index < circles.length; index += 1) {
-    color = randomColor();
-    circles[index].style.backgroundColor = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
+    if (index === chosenOne) {
+      circles[index].style.backgroundColor = `rgb${corRgb.innerText}`;
+    } else {
+      color = randomColor();
+      circles[index].style.backgroundColor = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
+    }
   }
 }
 
