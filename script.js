@@ -1,5 +1,5 @@
 const corRgb = document.querySelector('#rgb-color');
-const resetBtn = document.querySelector('#reset-btn');
+const resetGame = document.querySelector('#reset-game');
 const circles = document.querySelectorAll('.ball');
 const ballSection = document.querySelector('#ball-section');
 const answer = document.querySelector('#answer');
@@ -12,10 +12,11 @@ function randomColor() {
   return color;
 }
 
-resetBtn.addEventListener('click',function () {
+resetGame.addEventListener('click',function () {
   let color = randomColor();
   corRgb.innerText = `(${color[0]}, ${color[1]}, ${color[2]})`;
   circleColorGenerator();
+  answer.innerText = 'Escolha uma cor';
 });
 
 ballSection.addEventListener('click',function (event) {
