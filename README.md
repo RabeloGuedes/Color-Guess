@@ -5,7 +5,7 @@
     Sabia mais
   </summary>
   
-  # Pixels Art
+  # Color Guess
 Projeto da [Trybe](https://www.betrybe.com/) -  Bloco 5 - Aplicação de adivinhação de cores feita com HTML, CSS e JavaScript.
 
 ## 💻 Projeto
@@ -62,7 +62,7 @@ Projeto da [Trybe](https://www.betrybe.com/) -  Bloco 5 - Aplicação de adivinh
     More
   </summary>
   
-  # Pixels Art
+  # Color Guess
 Project from [Trybe](https://www.betrybe.com/) - Block 5 - Application to guess a rgb color value, done with HTML, CSS and JavaScript.
 
 ## 💻 Project
@@ -119,7 +119,7 @@ Project from [Trybe](https://www.betrybe.com/) - Block 5 - Application to guess 
     Mehr
   </summary>
   
-  # Pixels Art
+  # Color Guess
 Projekt von [Trybe](https://www.betrybe.com/) - Block 5 - Applikation um rgb Farbewert zu raten, mit HTML, CSS uns JavaScript hergestellt.
   
 
