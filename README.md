@@ -13,7 +13,7 @@ Projeto da [Trybe](https://www.betrybe.com/) -  Bloco 5 - Aplicação de adivinh
 <details>
   <summary><strong>🏆 Meu desempenho</strong></summary><br />
 
-  <img src="project-infos/color-guess.png"/>
+  <img src="project-infos/requisitos-color-guess.png"/>
 </details>
   
 <details>
@@ -70,7 +70,7 @@ Project from [Trybe](https://www.betrybe.com/) - Block 5 - Application to guess 
 <details>
   <summary><strong>🏆 My accomplishment</strong></summary><br />
 
-  <img src="project-infos/color-guess.png"/>
+  <img src="project-infos/requisitos-color-guess.png"/>
 </details>
   
 <details>
@@ -128,7 +128,7 @@ Projekt von [Trybe](https://www.betrybe.com/) - Block 5 - Applikation um rgb Far
 <details>
   <summary><strong>🏆 Meine Leistung</strong></summary><br />
 
-  <img src="project-infos/color-guess.png"/>
+  <img src="project-infos/requisitos-color-guess.png"/>
 </details>
   
 <details>
